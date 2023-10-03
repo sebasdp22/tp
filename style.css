@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  p,h1,h2,h3,h4{
+    color: #000000;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  body{
+    background-image: url(fondo.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  
+  }
+  header{
+    display: flex;
+    position: sticky;
+    top: 0%;
+    bottom: 0%;
+  }
+  
+  nav{
+    background: #f3d19e;
+    height: 80px;
+    width: 100%;
+  }
+  .enlace{
+    position: absolute;
+    padding: 20px 50px;
+  }
+  .logo{
+    height: 40px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #000000;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  li a.active, li a:hover{
+    background: #BE99F2;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: #000000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+  }
+  
+  .checkbox{
+    color:rgba(255, 255, 255, 0) ; 
+  
+  }
+  
+  .container1 , .container{
+    padding: 10px;
+    background-color:#ffe6c1;
+    margin-bottom: 200px;
+    margin-inline: 25%;
+    border-radius: 25px;
+  }
+  
+  .container1{
+    margin-top: 15px;
+  }
+
+  .personajebuild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 75;
+    max-width: 150;
+    
+  }
+  
+
+  .img_elementos{
+    padding: 20px;
+
+  }
+  
+h4{
+  margin-left: 25px;
+}
+
+
+.video{
+  display: flex;
+  justify-content: center;
+}
+  
+  @media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+  
+    }
+  }
+  
+  @media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#ffe6c1;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color:#BE99F2;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+  
+    .checkbox{
+        color:#BE99F2;
+    }
+
+    .container1 , .container{
+      margin-inline:4em;
+    }
+  }
